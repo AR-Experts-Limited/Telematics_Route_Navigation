@@ -1,8 +1,6 @@
-# Track It!
+# BizAlign - Telematics!
 
 > A GPS tracking application based on [flespi.io](https://flespi.io) and built with [Quasar](http://quasar-framework.org) and [Leaflet.js](http://leafletjs.com). Shows devices on the map and their telemetry messages; includes a track player.
-
-![Screenshot](/misc/screenshot.jpg?raw=true "Track it!")
 
 ## Features
 * ES6 Javascript
@@ -44,7 +42,6 @@ $ serve dist/spa
 # serve with hot reload at localhost:7006 for localhost:9005
 $ npm run dev_local
 ```
-## Demo
 
 ## License
 [MIT](https://github.com/flespi-software/TrackIt/blob/master/LICENSE) license.
