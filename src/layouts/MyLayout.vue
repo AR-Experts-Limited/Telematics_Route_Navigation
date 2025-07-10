@@ -110,15 +110,6 @@
           class="floated menu white-background"
           icon="mdi-menu"
           @click.stop="devicesListOpenedHandler(!devicesListSettings.opened)"/>
-        <div class="floated label">
-          <img src="track-it-logo.png" alt="Track it!" style="height: 40px; margin-top: 3px; display: inline-block">
-          <div class="q-toolbar-title" style="color: rgb(51, 51, 51); display: inline-block">
-            Track it! <sup>{{version}}</sup>
-            <div class="q-toolbar-subtitle">
-              Find yourself
-            </div>
-          </div>
-        </div>
         <q-btn v-if="errors.length" @click="clearNotificationCounter" small flat round color="bg-grey-9" size="md" icon="mdi-bell" class="floated notifications white-background">
           <q-chip v-if="newNotificationCounter" color="red" class="absolute-top-right q-pa-xs text-white" style="font-size: .6rem;">{{newNotificationCounter}}</q-chip>
           <q-menu fit ref="popoverError">
@@ -162,15 +153,7 @@
             <q-btn dense style="pointer-events: auto" @click="openURL('https://flespi.io')" color="red-5" label="flespi.io"/>
           </div>
         </div>
-        <a v-if="$q.platform.is.desktop" href="https://github.com/flespi-software/TrackIt/" target="_blank">
-          <q-btn flat round
-            color="bg-grey-9"
-            :class="[needShowTelemetry ? 'github' : 'telemetry']"
-            class="floated white-background">
-            <img style="height: 30px;" src="GitHub-Mark-32px.png" alt="GitHub">
-            <q-tooltip>Show on GitHub</q-tooltip>
-          </q-btn>
-        </a>
+        
         <q-btn small round flat
           v-if="needShowTelemetry"
           size="md"

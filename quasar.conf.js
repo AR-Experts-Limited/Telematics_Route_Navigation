@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 // Configuration for your app
 // https://quasar.dev/quasar-cli/quasar-conf-js
 const webpack = require('webpack'),
@@ -125,7 +127,8 @@ module.exports = function (ctx) {
             SERVER: JSON.stringify(serverAliases[process.env.FLESPI_SERVER]),
             DEV: process.env.NODE_ENV === 'development',
             PROD: process.env.NODE_ENV === 'production',
-            LOCAL: process.env.NODE_LOCAL === 'local'
+            LOCAL: process.env.NODE_LOCAL === 'local',
+            FLESPI_TOKEN: JSON.stringify(process.env.VUE_APP_HARDCODED_TOKEN)
           })
         )
       }

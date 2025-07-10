@@ -25,7 +25,11 @@ const connectionConfig = {
     clientId,
     mqttSettings
   },
-  httpConfig: { server: rest? rest : undefined, flespiApp: clientId }
+  httpConfig: {
+    server: rest ? rest : undefined,
+    flespiApp: clientId,
+    token: FLESPI_TOKEN // Use the token from the environment variable
+  }
 }
 
 export default ({ Vue, store }) => {

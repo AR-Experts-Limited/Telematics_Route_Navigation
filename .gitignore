@@ -21,3 +21,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.code-workspace
+
+.env
+node_modules/
+dist/
+package-lock.json

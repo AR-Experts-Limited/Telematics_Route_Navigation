@@ -7,9 +7,13 @@
 
 <script>
 import Offline from './components/Offline'
+
 export default {
   name: 'App',
-  components: { Offline }
+  components: { Offline },
+  created() {
+  console.log('[App.vue] created')
+}
 }
 </script>
 

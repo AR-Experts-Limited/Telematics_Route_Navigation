@@ -1,8 +1,8 @@
 {
-  "name": "track-it",
+  "name": "bizaligntelematics",
   "version": "2.0.4",
   "description": "A simple application based on flespi.io and built with Quasar and Leaflet.js. Allows tracking different devices on the map, viewing telemetry messages for these devices.",
-  "productName": "TrackIt!",
+  "productName": "BizAlign - Telematics",
   "capacitorId": "",
   "author": "Sergey Buntsevich <scarry92@yandex.ru>",
   "private": true,
@@ -17,6 +17,7 @@
     "@quasar/extras": "^1.5.2",
     "core-js": "^3.14.0",
     "datetimerangepicker": "github:flespi-software/DateTimeRangePicker",
+    "dotenv": "^17.2.0",
     "flespi-io-js": "github:flespi-software/flespi-io-js",
     "leaflet": "^1.9.4",
     "leaflet-geometryutil": "^0.10.3",
